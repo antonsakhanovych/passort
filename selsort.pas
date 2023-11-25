@@ -2,7 +2,7 @@ unit SelSort;
 
 interface
 
-procedure selectionSort (var arr: array of integer; size: integer );
+procedure selectionSort (var arr: array of integer);
 
 implementation
 
@@ -28,11 +28,13 @@ begin
    exit (minIndex);
 end;
 
-procedure selectionSort (var arr : array of integer; size: integer );
+procedure selectionSort (var arr : array of integer);
 var
-   i: integer = 0;
-   minind: integer;
+   i      : integer = 0;
+   minind : integer;
+   size   : integer;
 begin
+   size := length(arr);
    while (i < size) do
    begin
       minind := indexmin (arr, i, size);
