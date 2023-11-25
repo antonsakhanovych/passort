@@ -1,0 +1,5 @@
+* Passort
+Sorting algorithms implemented in Free Pascal
+
+** Implementations
+Selection sort \to [[./selsort.pas][selsort.pas]]
